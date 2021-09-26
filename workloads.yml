@@ -20,16 +20,16 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: position-similator
+  name: position-simulator
 spec:
   selector:
     matchLabels:
-      app: position-similator
+      app: position-simulator
   replicas: 1
   template: #template for the pods
     metadata:
       labels:
-        app: position-similator
+        app: position-simulator
     spec:
       containers:
         - name: position-simulator
